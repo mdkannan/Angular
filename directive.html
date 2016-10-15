@@ -1,0 +1,60 @@
+used the myrole instead of role as the attribute name.
+
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+      <meta charset="utf-8">
+      <title>AngularJS Isolate Scope</title>
+
+    </head>
+    <body>
+
+      <div ng-app="mainApp">
+		<div ng-controller="MainCtrl">
+
+			<div> From Controller : <input type="text" ng-model="ctrlRole" ></div><br>
+
+           		<div my-employee myrole="ctrlRole" myobject="details.name" click="$scope.btn()"></div>
+
+		</div>
+	</div>
+
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+      <script type="text/javascript" src="app.js"></script>
+<script>
+
+var app = angular.module('mainApp', []);
+
+	app.controller("MainCtrl", function($scope){
+		$scope.ctrlRole = "Development";
+               $scope.users={};
+               $scope.details ={name:{arr:[1,2,3,4]}};
+       $scope.btn = function(){ alert("sssss")}
+	});
+
+	app.directive("myEmployee", function() {
+
+		return {
+			scope:
+			{
+				role:"=myrole",
+                                user:"=myobject",
+                                click:"&click"
+			},
+			template: 'From Directive : <input type="text" ng-model="role"> <ol ng-click="click()" ng-repeat = "no in user.arr track by $index"><li>{{user.arr[$index]}}{{role}}</li></ol>'
+                          ,
+                      controller:function($scope,$element){$scope.click = function(){alert("i")}},
+                       link:function(scope,ele,att){
+                               $(element).find('li').click(function(){
+              scope.btn()
+
+            })
+                            }
+			   
+			
+		};
+	})
+
+</script>
+    </body>
+</html>
