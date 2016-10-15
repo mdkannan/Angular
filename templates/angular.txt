@@ -1,0 +1,5 @@
+1)client side html ko js and Angular
+2)server asp jsp
+
+client:
+https://www.youtube.com/watch?v=_-CD_5YhJTA&spfreload=10

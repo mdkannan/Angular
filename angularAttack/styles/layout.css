@@ -1,0 +1,71 @@
+body {
+	margin : 0px;
+	padding : 0px;
+}
+
+header, footer {
+	height : 44px;
+	width:100%;
+	line-height : 44px;
+}
+
+content {
+	display : block;
+}
+
+ul.horizontal-slide {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+ul.horizontal-slide li[class*="col"] {
+    display: inline-block;
+    float: none;
+}
+
+ul.horizontal-slide li[class*="col"]:first-child {
+    margin-left: 0;
+}
+
+ul.horizontal-slide li img {
+	height: 150px;
+    width: 150px;
+}
+
+ul.horizontal-slide li .item , .album-photos .item{
+	 padding: 15px 15px 50px;
+    background: white;
+    border-radius: 5px;
+}
+   
+.modal-content {
+	height: 90%;
+    margin: 5%;
+    width: 90%;
+}
+
+.width50 {
+	width : 50%;
+}
+
+.height50 {
+	height : 50%;
+}
+
+.album-photos .item.selected {
+	background : green;
+}
+
+.album-photos .item{
+	display: inline-block;
+    float: left;
+}
+
+.album-photos img {
+	width : 100px;
+	height : 100px;
+	
+}

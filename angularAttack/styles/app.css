@@ -1,0 +1,243 @@
+/**
+Header and footer and Status bar Details goes here
+**/
+header, footer {
+	background-color : #2196F3;
+	color : #ffffff;
+	text-align : center;
+	padding : 12px 0px 12px 0px;
+	line-height : 20px;
+	font-size : 18px;
+}
+/**
+Header and footer and Status bar Details goes here
+**/
+
+/**
+Main Content Colour for all the components
+**/
+content {
+	/*background-color : #1976D2;*/
+}
+/**
+Shadow for the elements to  make it depth to the application
+**/
+
+/**
+Shadow for the elements to  make it depth to the application
+**/
+
+/**
+ common content width and height
+**/
+
+content .width50 {
+	width : 50%;
+}
+
+content .height50 {
+	height : 50%;
+}
+
+/**
+ common content width and height
+**/
+
+/**
+Main layout css
+**/
+content {
+	display : block;
+}
+
+.mainContainer {
+	display: -webkit-flex;
+    display: flex;
+	height : 100%;
+}
+
+.mainContainer .containerLeft {
+	-webkit-flex: 1; /* Safari 6.1+ */
+    -ms-flex: 1; /* IE 10 */ 
+    flex: 1;
+	border-width: 0 5px 0 0;
+    border-color: #009688;
+    border-style: solid;
+    padding: 20px;
+}
+
+.mainContainer .containerRight {
+	-webkit-flex: 5; /* Safari 6.1+ */
+    -ms-flex: 5; /* IE 10 */ 
+    flex: 5;
+	margin : auto;
+	position: relative;
+}
+
+.mainContainer .containerRight .container {
+	height : 100%;
+	width : 100%;
+}
+
+/**
+Main layout css
+**/
+
+/**
+Loader CSS
+**/
+.loader {
+	width: 50%;
+    height: 50%;
+    text-align: center;
+	margin : auto;
+}
+.loader div {
+	text-align : left;
+} 
+
+
+/**
+Album photos CSS start
+**/
+
+ul.horizontal-slide {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+ul.horizontal-slide li[class*="col"] {
+    display: inline-block;
+    float: none;
+}
+
+ul.horizontal-slide li[class*="col"]:first-child {
+    margin-left: 0;
+}
+
+ul.horizontal-slide li img {
+	height: 150px;
+    width: 150px;
+}
+
+ul.horizontal-slide li .item , .album-photos .item{
+	 padding: 15px 15px 50px;
+    background: white;
+    border-radius: 5px;
+}
+
+/**
+Album Photo CSS ends
+**/
+
+/**
+iSCroll css starts
+**/
+
+#fbSrollWrapper, #fbPhotoSrollWrapper {
+	position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    margin: 0px;
+}
+
+#fbPhotoSrollWrapper {
+	bottom : 40px !important;
+}
+.scroller {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width : auto;
+	height: 100%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+.scroller ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.scroller li {
+	/*display: block;*/
+    float: left;
+    width: 250px;
+    height: auto;
+    border-right: 1px solid #ccc;
+    background-color: #fafafa;
+    font-size: 14px;
+}
+
+/**
+iscroll css ends
+**/
+
+/**
+Modal View css
+**/
+.modal-content {
+	height: 90%;
+    margin: 5%;
+    width: 90%;
+	overflow: hidden;
+	position : relative;
+}
+
+.modal-content .modal-body {
+	position: absolute;
+	padding : 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/**
+Modal View CSS
+**/
+/**
+Album photos css
+**/
+.album-photos .item.selected {
+	background : green;
+}
+
+.album-photos .item{
+	display: inline-block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+}
+
+.album-photos img {
+	width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+/**
+Album ohotos css
+**/

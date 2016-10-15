@@ -1,0 +1,10 @@
+body {
+	font-family : helvetica;
+}
+
+header, footer {
+	text-align: center;
+    font-weight: bold;
+    color: white;
+    background: rgba(79,133,187,1);
+}
